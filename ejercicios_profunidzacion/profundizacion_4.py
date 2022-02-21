@@ -46,32 +46,55 @@ print("""¿Como quiere ordenar las palabras?\n
 orden = int(input('Esperando su respuesta: '))
 
 if orden == 1: #Alfabeticamente
-    if (pal_1 > pal_2) and (pal_1 > pal_3):
-        if (pal_2 > pal_3) and (pal_1 > pal_3):
-            print(f'{pal_3}\n{pal_2}\n{pal_1}')
+    if (pal_2 > pal_1) and (pal_3 > pal_1): # and pal_2):
+        if pal_3 > pal_2:
+            print(f'{pal_1}\n{pal_2}\n{pal_3}')
+        else:
+            print(f'{pal_1}\n{pal_3}\n{pal_2}')
+    
+    elif (pal_1 > pal_2) and (pal_3 > pal_2): # and pal_2):
+        if pal_3 > pal_1:
+            print(f'{pal_2}\n{pal_1}\n{pal_3}')
         else:
             print(f'{pal_2}\n{pal_3}\n{pal_1}')
 
-
-            if pal_1 > pal_3:
-                print(f'{pal_3}\n{pal_2}\n{pal_1}')
-
-                print(f'{pal_2}\n{pal_3}\n{pal_1}')
-         if pal_2 > pal_3:     
-             print(f'{pal_2}\n{pal_3}\n{pal_1}')
-         else:
-             print(f'{pal_2}\n{pal_3}\n{pal_1}')
-    elif pal_2 > pal_3:# and pal_3:
-        if pal_1 > pal_3:
+    elif (pal_1 > pal_3) and (pal_2 > pal_3): # and pal_2):
+        if pal_2 > pal_1:
             print(f'{pal_3}\n{pal_1}\n{pal_2}')
         else:
-            print(f'{pal_1}\n{pal_3}\n{pal_2}')
-    elif pal_3 > pal_1 and pal_2:
-        if pal_1 > pal_2: 
+            print(f'{pal_3}\n{pal_2}\n{pal_1}')
+else:
+    pal_1_len = len(pal_1)
+    pal_2_len = len(pal_2)
+    pal_3_len = len(pal_3)
+
+    if (pal_1_len > pal_2_len) and (pal_2_len > pal_3_len):
+
+        print(f'{pal_1}\n{pal_2}\n{pal_3}')
+    
+    elif (pal_1_len > pal_3_len):
+        if (pal_3_len > pal_2_len):
+
+            print(f'{pal_1}\n{pal_3}\n{pal_2}') #anda
+
+    elif (pal_2_len > pal_1_len):
+        
+        if (pal_1_len > pal_3_len):
+        
             print(f'{pal_2}\n{pal_1}\n{pal_3}')
+        
+        else:        
+            print(f'{pal_2}\n{pal_3}\n{pal_1}')
+    
+    elif (pal_3_len > pal_1_len):
+        
+        if (pal_3_len > pal_2_len):
+        
+            print(f'{pal_3}\n{pal_1}\n{pal_2}')
+        
         else:
-            print(f'{pal_1}\n{pal_2}\n{pal_3}')
+            print(f'{pal_3}\n{pal_2}\n{pal_1}')
 
-
+    
 
 
