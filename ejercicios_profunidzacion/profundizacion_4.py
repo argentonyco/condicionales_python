@@ -31,5 +31,47 @@ no se busca utilizar bucles o algoritmos de ordenamiento ya que aún no hemos ll
 contenido.
 '''
 
-print('Ejercicios de práctica con cadenas')
+print('Ejercicios de práctica con cadenas\n')
 # Empezar aquí la resolución del ejercicio
+print ('Ingrese tres palabras a su eleccion\n')
+
+pal_1 = (input('Ingrese primer palabra:\n'))
+pal_2 = (input('Ingrese segunda palabra:\n'))
+pal_3 = (input('Ingrese tercer palabra:\n'))
+
+print("""¿Como quiere ordenar las palabras?\n
+    1 - Ordenar por orden alfabético.
+    2 - Ordenar por cantidad de letras.\n""")
+
+orden = int(input('Esperando su respuesta: '))
+
+if orden == 1: #Alfabeticamente
+    if (pal_1 > pal_2) and (pal_1 > pal_3):
+        if (pal_2 > pal_3) and (pal_1 > pal_3):
+            print(f'{pal_3}\n{pal_2}\n{pal_1}')
+        else:
+            print(f'{pal_2}\n{pal_3}\n{pal_1}')
+
+
+            if pal_1 > pal_3:
+                print(f'{pal_3}\n{pal_2}\n{pal_1}')
+
+                print(f'{pal_2}\n{pal_3}\n{pal_1}')
+         if pal_2 > pal_3:     
+             print(f'{pal_2}\n{pal_3}\n{pal_1}')
+         else:
+             print(f'{pal_2}\n{pal_3}\n{pal_1}')
+    elif pal_2 > pal_3:# and pal_3:
+        if pal_1 > pal_3:
+            print(f'{pal_3}\n{pal_1}\n{pal_2}')
+        else:
+            print(f'{pal_1}\n{pal_3}\n{pal_2}')
+    elif pal_3 > pal_1 and pal_2:
+        if pal_1 > pal_2: 
+            print(f'{pal_2}\n{pal_1}\n{pal_3}')
+        else:
+            print(f'{pal_1}\n{pal_2}\n{pal_3}')
+
+
+
+
