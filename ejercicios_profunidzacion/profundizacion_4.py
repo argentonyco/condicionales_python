@@ -68,32 +68,54 @@ else:
     pal_2_len = len(pal_2)
     pal_3_len = len(pal_3)
 
-    if (pal_1_len > pal_2_len) and (pal_2_len > pal_3_len):
-
-        print(f'{pal_1}\n{pal_2}\n{pal_3}')
+    if pal_1_len > pal_2_len and pal_1_len > pal_3_len: # aca la pal 1 esta primera
+        if pal_2_len > pal_3_len:
+            print(f'{pal_1}\n{pal_2}\n{pal_3}')
+        else:
+            print(f'{pal_1}\n{pal_3}\n{pal_2}')
     
-    elif (pal_1_len > pal_3_len):
-        if (pal_3_len > pal_2_len):
-
-            print(f'{pal_1}\n{pal_3}\n{pal_2}') #anda
-
-    elif (pal_2_len > pal_1_len):
-        
-        if (pal_1_len > pal_3_len):
-        
+    elif pal_2_len > (pal_1_len and pal_3_len): # aca la pal 2 esta primera
+        if pal_1_len > pal_3_len:
             print(f'{pal_2}\n{pal_1}\n{pal_3}')
-        
-        else:        
+        else:
             print(f'{pal_2}\n{pal_3}\n{pal_1}')
-    
-    elif (pal_3_len > pal_1_len):
-        
-        if (pal_3_len > pal_2_len):
-        
+
+    elif pal_3_len > (pal_1_len and pal_2_len): # aca la pal 3 esta primera
+        if pal_1_len > pal_2_len:
             print(f'{pal_3}\n{pal_1}\n{pal_2}')
-        
         else:
             print(f'{pal_3}\n{pal_2}\n{pal_1}')
+
+
+
+    # if (pal_1_len > pal_2_len) or (pal_1_len > pal_3_len):
+    #     if pal_2_len > pal_3_len:
+    #         print(f'{pal_1}\n{pal_2}\n{pal_3}')
+    #     else:
+    #         print(f'{pal_3}\n{pal_1}\n{pal_2} daleeee')
+
+    # elif (pal_1_len > pal_3_len):
+    #     if (pal_3_len > pal_2_len):
+
+    #         print(f'{pal_1}\n{pal_3}\n{pal_2}') #anda
+
+    # elif (pal_2_len > pal_1_len):
+        
+    #     if (pal_1_len > pal_3_len):
+        
+    #         print(f'{pal_2}\n{pal_1}\n{pal_3}')
+        
+    #     else:        
+    #         print(f'{pal_2}\n{pal_3}\n{pal_1}')
+    
+    # elif (pal_3_len > pal_1_len):
+        
+    #     if (pal_3_len > pal_2_len):
+        
+    #         print(f'{pal_3}\n{pal_1}\n{pal_2}')
+        
+    #     else:
+    #         print(f'{pal_3}\n{pal_2}\n{pal_1}')
 
     
 
