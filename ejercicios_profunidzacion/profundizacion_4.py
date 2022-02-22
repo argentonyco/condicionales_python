@@ -86,7 +86,7 @@ else:
         else:
             print(f'{pal_3}\n{pal_2}\n{pal_1}')
 
-
+#TERMINADO
 
     # if (pal_1_len > pal_2_len) or (pal_1_len > pal_3_len):
     #     if pal_2_len > pal_3_len:
